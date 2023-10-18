@@ -1,0 +1,53 @@
+---
+import { getCollection } from "astro:content"
+const {coords} = Astro.props
+const locations = coords ? coords.join(';') : await getCollection("standorte").then(locations => {
+    return locations.map(location => {
+        const {data} = location
+        return data.coords.join(';')
+    })
+})
+---
+<style>
+    .mapboxgl-control-container {
+        display: none !important;
+    }
+</style>
+
+<div class="container relative md:my-6">
+    <div class="absolute p-4 rounded-xl top-4 left-7 bg-petrol z-50">
+        <h2 class="font-baloo text-big leading-none text-petroldark">Auf Rügen wirst du<br/>fündig, hier findest<br/>du dein Urlaubsglück!</h2>
+    </div>
+    <div id="karte" class="bg-petrol rounded-xl w-full aspect-portrait md:aspect-video" data-coords={locations.toString()}></div>
+</div>
+
+<script>
+    import mapboxgl from "mapbox-gl";
+    mapboxgl.accessToken = "pk.eyJ1IjoidWhvcm4iLCJhIjoiY2wzZTlocThxMDAydDNicG50anc1b2R1MSJ9.-rO7_-YT3mRs1OtN7_lFhQ";
+
+    const init = async () => {
+        const elem = document.getElementById("karte");
+        if (!elem) return;
+
+        const {coords} = elem.dataset;
+        const coordsArray = coords.split(",");
+
+        const map = new mapboxgl.Map({
+            container: elem,
+            style: "mapbox://styles/uhorn/clnvso9n6002u01qy2ndig3ap",
+            zoom: 10,
+            center: [13.691880, 54.377100],
+        });
+        map.scrollZoom.disable();
+
+        coordsArray.forEach((coord) => {
+            const el = document.createElement("div");
+            el.className = "marker";
+            const innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF007A" class="w-6 h-6"><path fill-rule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>`;
+            el.innerHTML = innerHTML;
+
+            new mapboxgl.Marker(el).setLngLat(coord.split(";")).addTo(map);
+        });
+    };
+    init();
+</script>

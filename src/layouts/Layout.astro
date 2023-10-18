@@ -1,0 +1,44 @@
+---
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+
+import { Image } from 'astro:assets';
+import '../styles/globals.scss'
+
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description}>
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css">
+	</head>
+	<body>
+		<header class="py-8">
+			<div class="container flex items-center justify-between">
+				<a href="/">
+					<Image src="/images/logo.svg" alt="Rügentrip" width="160" height="36"/>
+				</a>
+
+				<span class="cursor-pointer">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 pointer-events-none">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+					</svg>					  
+				</span>
+			</div>
+		</header>
+
+		<slot />
+	</body>
+</html>
+

@@ -1,0 +1,55 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import BookingForm from '../../components/BookingForm.astro';
+import DestinationSlider from '../../components/DestinationSlider.astro';
+import Map from '../../components/Map.astro';
+
+import { Image } from 'astro:assets';
+import { Accomodations } from '../../components/Accomodations';
+
+import {getCollection} from 'astro:content'
+
+export async function getStaticPaths() {
+    const standorte = await getCollection('standorte');
+    return standorte.map(entry => {
+        return {
+            params: {
+                slug: entry.slug
+            },
+            props: {entry}
+        }
+    });
+};
+
+const {entry} = Astro.props;
+const {Content} = await entry.render()
+
+---
+
+<PageLayout title={entry.data?.title} description={entry.data?.description}>
+    <div class="container mb-16">
+        <div class="relative aspect-portrait md:aspect-video lg:aspect-banner w-full flex flex-col justify-end">
+            <Image src={entry.data.image} alt={entry.data.title} width="1600" height="1064" class="w-full h-full absolute object-cover left-0 top-0 rounded-xl"/>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <h2 class="text-center font-baloo text-biggest leading-snug md:max-w-[75%] mx-auto text-white">
+                    Entdecke deine <span class="underlined underline-lila">Traumwelt</span> auf Rügen - Dein Urlaub, im {entry.data.title}!
+                </h2>
+            </div>
+
+            <div class="relative hidden lg:block -mb-12 mt-auto">
+				<BookingForm />
+			</div>
+        </div>
+    </div>
+    <div class="container">
+
+        <Accomodations client:load view="grid" columns="4" location={entry.data.location}/>
+    </div>
+    <div class="container mt-16">
+        <h1 class="font-baloo text-biggest leading-snug text-center md:max-w-[75%] mx-auto">
+            <span class="underlined">Rügen</span> ruft!  Erkunde das Juwel der Ostsee und erlebe unvergessliche Ferientage.
+        </h1>
+        <DestinationSlider exclude={entry.slug}/>
+        <Content />
+    </div>
+</PageLayout>
