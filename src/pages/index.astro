@@ -11,28 +11,34 @@ import { Image } from 'astro:assets';
 
 <Layout title="Startseite" description="Startseite">
 	<main>
-		<div class="container">
-			<div class=" grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-				<div class="col-span-1 order-2 md:order-1">
-					<h1 class="font-baloo text-biggest leading-snug">
-						<span class="underlined">Rügen</span> ruft!  Erkunde das Juwel der Ostsee und erlebe unvergessliche Ferientage.
-					</h1>
-					<p class="my-6">Entdecke die Schönheit Rügens, dein Urlaubsparadies im Meer.</p>
-					<a href="/" class="cta petrol">plane deinen Rügentrip</a>
+		<div class="w-full bg-cover bg-center bg-no-repeat" style="background-image: url('/images/hero-bg.png')">
+			<div class="container">
+				<div class=" grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+					<div class="col-span-1 order-2 md:order-1">
+						<h1 class="font-baloo text-biggest leading-snug">
+							<span class="circled">Rügen</span> ruft!  Erkunde das Juwel der Ostsee und erlebe <span class="underlined">unvergessliche</span> Ferientage.
+						</h1>
+						<div class=" mb-auto relative hidden lg:block mt-16">
+							<div class="absolute left-0 top-0">
+								<BookingForm />
+							</div>
+						</div>
+					</div>
+					<div class="col-span-1 order-1 md:order-2">
+						<Image src="/images/hero.png" alt="Erkunde das Juwel der Ostsee und erlebe unvergessliche Ferientage." width="600" height="600"/>
+					</div>
 				</div>
-				<div class="col-span-1 order-1 md:order-2">
-					<Image src="/images/hero.png" alt="Erkunde das Juwel der Ostsee und erlebe unvergessliche Ferientage." width="600" height="600"/>
-				</div>
-			</div>
-			<div class="-mt-8 mb-auto relative hidden lg:block">
-				<BookingForm />
+				
 			</div>
 		</div>
 
 		<div class="container my-16">
-			<h2 class="text-center font-baloo text-biggest leading-snug md:max-w-[60%] mx-auto">
-				Entdecke deine <span class="underlined underline-red">Traumwelt</span> auf Rügen - Dein Urlaub, dein Paradies!
-			</h2>
+			<div class="flex">
+				<h2 class="font-baloo text-bigger leading-snug md:max-w-[60%]">
+					Entdecke deine Traumwelt auf Rügen - Dein Urlaub, dein Paradies!
+				</h2>
+				
+			</div>
 
 			<DestinationSlider/>
 		</div>
@@ -44,7 +50,6 @@ import { Image } from 'astro:assets';
 
 			<Accomodations client:load view="slider" columns={4} />
 		</div>
-		<Map />
 		<Reviews />
 	</main>
 </Layout>

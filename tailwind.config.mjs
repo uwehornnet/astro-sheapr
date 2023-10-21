@@ -19,7 +19,7 @@ export default {
 				baloo: ['"Baloo"'],
 			},
 			aspectRatio: {
-				portrait: "9 / 11",
+				portrait: "8 / 11",
 				banner: "16 / 4",
 				video: "16 / 9",
 				square: "1 / 1",

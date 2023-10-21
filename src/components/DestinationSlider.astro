@@ -20,17 +20,17 @@ const destinations = await getCollection("standorte").then(destination => {
             {destinations.map((destination, idx) => {    
                 const {data} = destination
                 return (
-                    <div class="swiper-slide" key={idx}>
-                        <a href={`/standort/${destination.slug}`}  class="rounded-xl bg-white block">
+                    <div class="swiper-slide p-2 bg-light/50 rounded-xl" key={idx}>
+                        <a href={`/standort/${destination.slug}`}  class="relative rounded-xl bg-white aspect-portrait flex flex-col justify-end overflow-hidden">
                             <Image
                                 src={data.image}
                                 alt={data.title}
                                 width="280"
                                 height="320"
-                                class="block w-full rounded-tl-xl rounded-tr-xl aspect-portrait object-cover"
+                                class="absolute top-0 left-0 w-full h-full rounded-xl object-cover"
                             />
 
-                            <div class="p-4 flex items-center justify-between">
+                            <div class="relative p-4 flex items-center justify-between bg-black/30 text-white backdrop-blur-xl">
                                 <h2 class="font-baloo flex-1 leading-none">
                                     {data.title}
                                 </h2>

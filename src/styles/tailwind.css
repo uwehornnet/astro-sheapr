@@ -1,5 +1,5 @@
 :root {
-	--background-color: #EDECE5;
+	--background-color: #F7F8E6;
 	--dark-color: #1B1C1F;
 }
 
@@ -66,7 +66,7 @@
 	}
 
 	.text-biggest {
-		font-size: clamp(2.4rem, 2.4vw, 3.2rem);
+		font-size: clamp(2.4rem, 3.2vw, 4rem);
 	}
 
 	.image-big {

@@ -3,18 +3,20 @@ import { Image } from "astro:assets";
 
 ---
 
-<div class="container ">
-    <div class="grid md:grid-cols-2 gap-8 items-center relative rounded-xl bg-light">
-        <div class="col-span-1 hidden md:block">
-            <Image src="/images/erkunden-banner.png" alt="Rügen erkunden" width="500" height="500" class="absolute w-auto h-[110%] bottom-0 md:left-0 lg:left-[8%]"/>
-        </div>
-        <div class="col-span-1 p-6 md:p-16 relative">
-            <h2 class="font-baloo text-big leading-snug mb-6">
-                Rügens Schätze entdecken, in Traumunterkünften entspannen
-            </h2>
-            <p>Erlebe unvergessliche Momente an den schönsten Orten auf Rügen – finde hier die ideale Unterkunft für dein Traumurlaubserlebnis!</p>
-
-            <a href="/" class="cta orange mt-6 inline-block">Unterkünfte finden</a>
+<div class="w-full bg-cover bg-center bg-no-repeat py-16 bg-light"style="background-image: url('/images/hero-bg.png')">
+    <div class="container ">
+        <div class="grid md:grid-cols-2 gap-8 items-center relative">
+            <div class="col-span-1 hidden md:block">
+                <Image src="/images/erkunden-banner.png" alt="Rügen erkunden" width="500" height="500" class="absolute w-auto h-[110%] bottom-0 md:left-0 lg:left-[8%]"/>
+            </div>
+            <div class="col-span-1 p-6 md:p-16 relative">
+                <h2 class="font-baloo text-big leading-snug mb-6">
+                    Rügens Schätze entdecken, in Traumunterkünften entspannen
+                </h2>
+                <p>Erlebe unvergessliche Momente an den schönsten Orten auf Rügen – finde hier die ideale Unterkunft für dein Traumurlaubserlebnis!</p>
+    
+                <a href="/" class="cta orange mt-6 inline-block">Unterkünfte finden</a>
+            </div>
         </div>
     </div>
 </div>

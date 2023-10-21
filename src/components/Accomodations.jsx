@@ -38,20 +38,20 @@ const Slider = ({ items, columns }) => {
 				})
 				.map((item, index) => {
 					return (
-						<SwiperSlide key={index} className="h-auto">
+						<SwiperSlide key={index} className="h-auto p-2 bg-light/50 rounded-xl">
 							<a
 								href={item.booking_url}
 								target="_blank"
 								rel="noopender"
-								className="col-span-1 rounded-xl bg-white block h-full"
+								className="col-span-1 relative rounded-xl bg-white flex flex-col justify-end aspect-portrait overflow-hidden"
 							>
 								<img
 									src={item.thumbnail}
 									alt={item.title}
-									className="block w-full rounded-tl-xl rounded-tr-xl aspect-square md:aspect-portrait object-cover"
+									className="absolute w-full h-full left-0 top-0 object-cover rounded-xl"
 								/>
 
-								<div className="p-2 ">
+								<div className="p-2 relative bg-black/30 text-white backdrop-blur-xl">
 									<h2 className="font-baloo leading-none mb-6">
 										{item.title.substring(0, 40) + "..."}
 									</h2>
