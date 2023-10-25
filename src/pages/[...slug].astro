@@ -1,0 +1,28 @@
+---
+import {getCollection} from 'astro:content'
+import Layout from '../layouts/Layout.astro';
+import { Accomodations } from '../components/Accomodations';
+import Banner from '../components/Banner.astro';
+
+export async function getStaticPaths() {
+    const types = await getCollection('types');
+    return types.map(entry => {
+        return {
+            params: {
+                slug: entry.slug
+            },
+            props: {entry}
+        }
+    });
+};
+
+const {entry} = Astro.props
+const {slug} = Astro.params
+---
+
+<Layout >
+    <div class="container">
+        <Accomodations client:load view="grid" type={slug} />
+    </div>
+    <Banner />
+</Layout>

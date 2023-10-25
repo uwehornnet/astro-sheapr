@@ -13,7 +13,7 @@
 	position: relative;
 	display: inline-block;
 	&:after {
-		content: url("data:image/svg+xml; utf8, %3Csvg viewBox='0 0 289 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.0784 12.5276C77.9791 12.5276 133.202 14.4839 187.958 10.4346C220.124 8.0558 252.221 8.34159 284.453 8.34159C288.265 8.34159 291.783 8.34159 285.752 8.34159C271.933 8.34159 258.115 8.34159 244.296 8.34159C186.555 8.34159 128.823 10.4346 71.0305 10.4346C30.2238 10.4346 152.351 2.50409 193.155 2.06264C206.183 1.9217 219.22 2.06264 232.249 2.06264C246.304 2.06264 204.139 1.96451 190.084 2.06264C131.234 2.47354 72.2662 8.34159 13.5116 8.34159C-43.6706 8.34159 127.823 4.15562 185.005 4.15562C202.397 4.15562 218.507 2.06264 235.674 2.06264' stroke='%23FFB168' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
+		content: url("data:image/svg+xml; utf8, %3Csvg viewBox='0 0 289 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.0784 12.5276C77.9791 12.5276 133.202 14.4839 187.958 10.4346C220.124 8.0558 252.221 8.34159 284.453 8.34159C288.265 8.34159 291.783 8.34159 285.752 8.34159C271.933 8.34159 258.115 8.34159 244.296 8.34159C186.555 8.34159 128.823 10.4346 71.0305 10.4346C30.2238 10.4346 152.351 2.50409 193.155 2.06264C206.183 1.9217 219.22 2.06264 232.249 2.06264C246.304 2.06264 204.139 1.96451 190.084 2.06264C131.234 2.47354 72.2662 8.34159 13.5116 8.34159C-43.6706 8.34159 127.823 4.15562 185.005 4.15562C202.397 4.15562 218.507 2.06264 235.674 2.06264' stroke='%2300FFD1' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E");
 		display: block;
 		height: auto;
 		width: 120%;
@@ -21,7 +21,7 @@
 		top: 25%;
 		left: 50%;
 		transform: translate3d(-50%, 0%, 0);
-		z-index: -1;
+
 	}
 
 	&.underline-red{
@@ -31,14 +31,35 @@
 	}
 }
 
-.cta {
-	position: relative !important;
-	display: inline-block !important;
-	padding: 8px 16px !important;
-	background-color: white !important;
-	cursor: pointer !important;
-	margin: 10px 0 !important;
-	color: var(--neutral-dark) !important;
-	border-radius: 24px !important;
-	font-weight: 500;
+.swiper {
+	&-controls {
+
+	}
+
+	&-pagination {
+		position: relative !important;
+		top: 0 !important;
+		bottom: 0 !important;
+		left: 0 !important;
+		display: flex;
+		justify-content: center;
+		gap: 6px;
+
+		&-bullet {
+			background: var(--neutral-dark);
+			height: 3px;
+			width: 8px;
+			opacity: .3;
+			transition: width .3s, opacity .3s;
+			border-radius: 8px !important;
+			margin: 0px !important;
+
+			&-active {
+				width: 16px;
+				opacity: 1;
+				transition: width .3s, opacity .3s;
+			}
+		}
+
+	}
 }

@@ -12,6 +12,14 @@ export const collections = {
 			content: z.string().optional(),
 		}),
 	}),
+	types: defineCollection({
+		type: "content",
+		sortBy: "title",
+		schema: z.object({
+			title: z.string(),
+			content: z.string().optional(),
+		}),
+	}),
 	reviews: defineCollection({
 		type: "data",
 		sortBy: "title",

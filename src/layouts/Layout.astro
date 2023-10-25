@@ -1,14 +1,14 @@
 ---
-interface Props {
-	title: string;
-	description: string;
-}
-
-const { title, description } = Astro.props;
-
 import { Image } from 'astro:assets';
-import '../styles/globals.scss'
+import {getCollection} from 'astro:content'
 
+import '../styles/globals.scss'
+import Footer from '../components/Footer.astro';
+
+
+const types = await getCollection('types');
+const { title, description } = Astro.props;
+const {slug} = Astro.params
 ---
 
 <!doctype html>
@@ -27,8 +27,12 @@ import '../styles/globals.scss'
 		<header class="py-8">
 			<div class="container flex items-center justify-between">
 				<a href="/">
-					<Image src="/images/logo.svg" alt="Rügentrip" width="160" height="36"/>
+					<Image src="/images/logo.svg" alt="Rügentrip" width="120" height="48"/>
 				</a>
+
+				<ul class="hidden md:flex items-center justify-center gap-8">
+					{types.map(type => <li class={slug && slug == type.slug ? 'underlined' : null}><a href={`/${type.slug}`}>{type.data.title}</a></li>)}
+				</ul>
 
 				<span class="cursor-pointer">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 pointer-events-none">
@@ -39,6 +43,7 @@ import '../styles/globals.scss'
 		</header>
 
 		<slot />
+
+		<Footer />
 	</body>
 </html>
-

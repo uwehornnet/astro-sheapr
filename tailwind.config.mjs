@@ -8,20 +8,20 @@ export default {
 				"spin-slow": "spin 20s linear infinite",
 			},
 			colors: {
-				lightest: "#EDECE5",
-				light: "#E2E0D1",
+				lightest: "#F1F3F8",
+				light: "#E3E6ED",
 				petrol: "#D8E0D4",
 				petroldark: "#88A398",
 				dark: "#1B1C1F",
 			},
 			fontFamily: {
-				jost: ['"Jost"'],
-				baloo: ['"Baloo"'],
+				josefin: ['"JosefinSans"'],
 			},
 			aspectRatio: {
-				portrait: "8 / 11",
+				portrait: "8 / 10",
 				banner: "16 / 4",
 				video: "16 / 9",
+				hero: "16 / 7",
 				square: "1 / 1",
 			},
 			spacing: {
