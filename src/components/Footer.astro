@@ -8,19 +8,19 @@ const standorte = await getCollection('standorte');
 <div class="container p-3 my-8">
     <div class="grid md:grid-cols-4 gap-8 bg-dark text-white rounded-xl p-8">
         <div class="col-span-1">
-            <h3 class="text-light uppercase text-sm font-semibold mb-4 underlined">Unterkünfte</h3>
+            <h3 class="text-light uppercase text-sm font-semibold mb-4">Unterkünfte</h3>
             <ul>
                 {types.map(type => <li><a href={`/${type.slug}`}>{type.data.title}</a></li>)}
             </ul>
         </div>
         <div class="md:col-span-2">
-            <h3 class="text-light uppercase text-sm font-semibold mb-4 underlined">Urlaubsorte</h3>
+            <h3 class="text-light uppercase text-sm font-semibold mb-4">Urlaubsorte</h3>
             <ul class="grid md:grid-cols-2 gap-x-8">
                 {standorte.map(type => <li><a href={`/standort/${type.slug}`}>{type.data.title}</a></li>)}
             </ul>
         </div>
         <div class="col-span-1">
-            <h3 class="text-light uppercase text-sm font-semibold mb-4 underlined">Rechtliches</h3>
+            <h3 class="text-light uppercase text-sm font-semibold mb-4">Rechtliches</h3>
             <ul>
                 <li><a href="/impressum">Impressum</a></li>
                 <li><a href="/datenschutz">Datenschutz</a></li>

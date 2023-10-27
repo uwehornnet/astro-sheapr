@@ -3,12 +3,12 @@ import { getCollection } from "astro:content"
 const posts = await getCollection("reviews")
 ---
 
-<div class="container md:my-16 reviews">
+<div class="container my-8 md:my-16 reviews">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="col-span-1 flex flex-col justify-between">
-            <div class="relative">
+            <div class="relative text-darkblue">
                 <p class="m-0">Du wirst begeistert sein</p>
-                <h2 class="font-baloo text-bigger leading-none">Das sagen<br/>unsere Gäste!</h2>
+                <h2 class="font-semibold text-bigger leading-none">Das sagen<br/>unsere Gäste!</h2>
             </div>
 
             <div class="controls mt-16">
@@ -32,7 +32,7 @@ const posts = await getCollection("reviews")
                     {posts.map(({data}, idx) => {
                         return (
                             <div class="swiper-slide" key={idx}>
-                                <div class="p-4 rounded-xl bg-lightest">
+                                <div class="p-4 rounded-xl bg-white/60">
                                     <div class="flex flex-col mb-6">
                                         <p class="font-medium text-sm">{data.name}</p>    
                                         <p class="text-sm text-neutral-400">{new Date(data.date).toLocaleDateString()}</p>    

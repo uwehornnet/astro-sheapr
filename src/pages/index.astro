@@ -1,8 +1,6 @@
 ---
 import { Accomodations } from '../components/Accomodations';
 import Banner from '../components/Banner.astro';
-
-import DestinationSlider from '../components/DestinationSlider.astro';
 import Hero from '../components/Hero.astro';
 import Map from '../components/Map.astro';
 import Reviews from '../components/Reviews.astro';
@@ -14,38 +12,25 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 		<Hero />
 
-		<div class="container my-16 relative">
-			<h2 class="text-center text-bigger leading-snug md:max-w-[60%] mx-auto mb-8">
-				Entdecke deine <span class="underlined">Traumwelt</span> auf Rügen - Dein Urlaub, dein Paradies!
+		<div class="relative container my-16">
+			<h2 class="text-center text-darkblue text-bigger font-medium leading-snug mx-auto mb-8">
+				Finde deine <span class="underlined">Traumunterkunft</span> auf <br> der zauberhaften Insel Rügen.
 			</h2>
 
 			<Accomodations client:load view="slider" type={false} />
 		</div>
-
+		<Banner />
+		<Map />
 		<div class="container relative my-8">
 			<div class="grid md:grid-cols-3 gap-6">
 				<div class="col-span-1">
-					<h2 class="text-big">Deinen Traumurlaub auf Rügen, buche jetzt eine <span class="underlined">Ferienwohnung</span> und lass dich verwöhnen!</h2>
+					<h2 class="text-big font-semibold text-darkblue">Deinen Traumurlaub auf Rügen, buche jetzt eine <span class="underlined">Ferienwohnung</span> und lass dich verwöhnen!</h2>
 				</div>
 				<div class="md:col-span-2">
 					<p>Wir bieten dir eine große Auswahl an hochwertigen Ferienwohnungen auf der wunderschönen Insel Rügen. Egal ob du mit deiner Familie, Freunden oder alleine reist - wir haben die passende Unterkunft für dich. Unsere Ferienwohnungen sind modern und gemütlich eingerichtet und verfügen über alles, was du für einen entspannten Urlaub brauchst. Viele unserer Wohnungen liegen direkt am Strand oder in unmittelbarer Nähe zum Meer, so dass du jederzeit das Meeresrauschen genießen kannst. Aber auch wer es etwas ruhiger mag findet bei uns die perfekte Wohnung: Umgeben von grüner Natur und fernab vom Trubel des Tourismus findest du hier Ruhe und Erholung pur. </p>
 				</div>
 			</div>
 		</div>
-
-		<Banner />
-
-		<div class="container my-16">
-			<div class="flex">
-				<h2 class="text-center text-bigger leading-snug md:max-w-[60%] mx-auto">
-					Entdecke deine Traumwelt auf Rügen - Dein Urlaub, <span class="underlined">dein Paradies</span>!
-				</h2>
-				
-			</div>
-
-			<DestinationSlider/>
-		</div>
-		
 		<Reviews />
 	</main>
 </Layout>

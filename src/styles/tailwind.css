@@ -1,5 +1,5 @@
 :root {
-	--background-color: #FFFFFF;
+	--background-color: #DEF6FF;
 	--dark-color: #1B1C1F;
 }
 
@@ -9,24 +9,30 @@
 
 @layer base {
 	@font-face {
-		font-family: "JosefinSans";
+		font-family: "Jost";
 		font-weight: 400;
-		src: url(/fonts/JosefinSans-Regular.woff) format("woff"),
-			url(/fonts/JosefinSans-Regular.ttf) format("ttf");
+		src: url(/fonts/Jost-Regular.woff) format("woff"),
+			url(/fonts/Jost-Regular.ttf) format("ttf");
 	}
 
 	@font-face {
-		font-family: "JosefinSans";
-		font-weight: 600;
-		src: url(/fonts/JosefinSans-SemiBold.woff) format("woff"),
-			url(/fonts/JosefinSans-SemiBold.ttf) format("ttf");
+		font-family: "Jost";
+		font-weight: 500;
+		src: url(/fonts/Jost-Medium.woff) format("woff"),
+			url(/fonts/Jost-Medium.ttf) format("ttf");
 	}
 
+	@font-face {
+		font-family: "Jost";
+		font-weight: 600;
+		src: url(/fonts/Jost-SemiBold.woff) format("woff"),
+			url(/fonts/Jost-SemiBold.ttf) format("ttf");
+	}
 
 	body {
 		font-size: 18px;
 		color: var(--dark-color);
-		font-family: "JosefinSans", sans-serif;
+		font-family: "Jost", sans-serif;
 		font-weight: 400;
 		background-color: var(--background-color)
 	}
@@ -56,7 +62,7 @@
 	}
 
 	.text-bigger {
-		font-size: clamp(2rem, 2.4vw, 2.8rem);
+		font-size: clamp(2.4rem, 4vw, 4rem);
 	}
 
 	.text-biggest {

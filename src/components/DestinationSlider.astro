@@ -20,7 +20,7 @@ const destinations = await getCollection("standorte").then(destination => {
             {destinations.map((destination, idx) => {    
                 const {data} = destination
                 return (
-                    <div class="swiper-slide" key={idx}>
+                    <div class="swiper-slide">
                         <a href={`/standort/${destination.slug}`}  class="relative rounded-xl bg-white aspect-portrait flex flex-col justify-end overflow-hidden">
                             <Image
                                 src={data.image}
@@ -53,14 +53,13 @@ const destinations = await getCollection("standorte").then(destination => {
             })}
         </div>
 
-        <div class="swiper-controls flex items-center justify-between mt-4">
-            <div class="swiper-controls-prev cursor-pointer">
+        <div class="swiper-controls flex items-center justify-start gap-4 mt-4">
+            <div class="swiper-controls-prev cursor-pointer rounded-full p-4 bg-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pointer-events-none">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-controls-next cursor-pointer">
+            <div class="swiper-controls-next cursor-pointer rounded-full p-4 bg-white">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 pointer-events-none">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>

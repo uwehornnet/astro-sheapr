@@ -2,21 +2,85 @@
 import BookingForm from '../components/BookingForm.astro';
 
 import { Image } from 'astro:assets';
+
+import { getCollection } from "astro:content"
+const destinations = await getCollection("standorte")
 ---
 
-<div class="w-full relative px-4 lg:mb-32">
-    <img src="/images/bg.png" alt="background"  class="absolute w-full h-auto bg-cover bg-center bg-no-repeat top-1/2 left-0">
-    <div class="relative container bg-cover bg-center bg-no-repeat aspect-square md:aspect-hero rounded-xl flex flex-col justify-center" style="background-image: url('/images/hero.png')">
-        <div class="absolute top-0 left-0 w-full h-full bg-black/30 rounded-xl"></div>
-        <div class="relative">
-            <h1 class="text-white text-biggest font-semibold leading-none text-center">
-                Du <span class="underlined">verdienst</span> eine <br/>Auszeit auf Rügen.
-            </h1>
+<div class="w-full relative">
+    <img src="/images/bg.png" alt="background"  class="absolute w-full h-auto bg-cover bg-center bg-no-repeat top-3/4 lg:top-0 left-0">
+    <div class="relative container p-0">
+    
+        <div class="grid lg:grid-cols-2 items-center">
+            <div class="col-span-1">
+                <h1 class="text-darkblue text-bigger font-medium leading-tight text-center lg:text-left my-8 lg:my-0">
+                    Entdecke <span class="underlined">Rügens</span><br>Charme, finde deine<br>Traumunterkunft am Strand!
+                </h1>
+            </div>
+            <div class="col-span-1 destinations overflow-hidden lg:overflow-visible px-4">
+                <div class="swiper overflow-visible max-w-[400px] mx-auto">
+                    <div class="swiper-wrapper relative">
+                        {destinations.map((destination, idx) => {    
+                            const {data} = destination
+                            return (
+                                <div class="swiper-slide rounded-xl overflow-hidden">
+                                    <a href={`/standort/${destination.slug}`}  class="relative rounded-xl bg-white aspect-portrait flex flex-col justify-end overflow-hidden">
+                                        <Image
+                                            src={data.image}
+                                            alt={data.title}
+                                            width="280"
+                                            height="320"
+                                            class="absolute top-0 left-0 w-full h-full rounded-xl object-cover"
+                                        />
             
+                                        <div class="relative px-4 py-8 flex items-center justify-between bg-gradient-to-t from-black/50 to-black/0 text-white">
+                                            <h2 class="font-baloo flex-1 leading-none">
+                                                {data.title}
+                                            </h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="absolute left-0 bottom-0 translate-y-1/2 w-full hidden lg:block">
+        <div class="my-8 hidden lg:block">
             <BookingForm />
         </div>
     </div>
-    
 </div>
+
+<script>
+    // core version + navigation, pagination modules:
+    import Swiper from 'swiper';
+    import { Autoplay, Navigation, Pagination, EffectCards } from 'swiper/modules';
+
+    Swiper.use([Autoplay, EffectCards]);
+    // import Swiper and modules styles
+    import 'swiper/css';
+    import 'swiper/css/navigation';
+    import 'swiper/css/pagination';
+
+    const wrapper = document.querySelector(".destinations");
+    const element = wrapper.querySelector(".swiper");
+  
+    const options = {
+        autoplay: {
+            delay: 5000,
+        },
+        effect: "cards",
+        cardsEffect: {
+            perSlideRotate: 0,
+            perSlideOffset: 24,
+            slideShadows: true
+        },
+        grabCursor: true,
+        
+        
+    };
+
+    const swiper = new Swiper(element, options);
+</script>
+

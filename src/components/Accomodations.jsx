@@ -7,8 +7,17 @@ import { Navigation, Pagination } from "swiper/modules";
 // Import Swiper styles
 import "swiper/css";
 
-const Slider = ({ items }) => {
+const Loader = () => {
 	return (
+		<div className="container flex flex-col items-center justify-center">
+			<div className="h-6 w-6 rounded-full border-4 border-t-darkblue/50 border-r-darkblue/50 border-b-darkblue/50 border-l-darkblue/0 animate-spin"></div>
+			<span className="text-darkblue/50 text-sm mt-4">... loading</span>
+		</div>
+	);
+};
+
+const Slider = ({ items }) => {
+	return items.length ? (
 		<Swiper
 			modules={[Navigation, Pagination]}
 			spaceBetween={24}
@@ -37,10 +46,6 @@ const Slider = ({ items }) => {
 				nextEl: ".swiper-controls-next",
 				prevEl: ".swiper-controls-prev",
 			}}
-			pagination={{
-				el: ".swiper-pagination",
-				clickable: true,
-			}}
 		>
 			{items
 				.filter((item, idx) => {
@@ -48,7 +53,7 @@ const Slider = ({ items }) => {
 				})
 				.map((item, index) => {
 					return (
-						<SwiperSlide key={index}>
+						<SwiperSlide key={index} className="h-auto p-2 bg-white rounded-xl">
 							<a
 								href={item.booking_url}
 								target="_blank"
@@ -64,7 +69,7 @@ const Slider = ({ items }) => {
 									className="absolute w-full h-full left-0 top-0 object-cover rounded-xl"
 								/>
 
-								<div className="p-2 relative bg-black/30 text-white backdrop-blur-xl">
+								<div className="p-2 relative bg-black/30 text-white backdrop-blur-xl rounded-xl">
 									<h2 className="font-baloo leading-none mb-6">
 										{item.title.substring(0, 40) + "..."}
 									</h2>
@@ -102,8 +107,8 @@ const Slider = ({ items }) => {
 						</SwiperSlide>
 					);
 				})}
-			<div className="swiper-controls flex items-center justify-between mt-4">
-				<div className="swiper-controls-prev cursor-pointer">
+			<div className="swiper-controls flex items-center justify-start mt-4 gap-4">
+				<div className="swiper-controls-prev cursor-pointer bg-white rounded-full p-4">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -115,8 +120,7 @@ const Slider = ({ items }) => {
 						<path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
 					</svg>
 				</div>
-				<div className="swiper-pagination"></div>
-				<div className="swiper-controls-next cursor-pointer">
+				<div className="swiper-controls-next cursor-pointer bg-white rounded-full p-4">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -130,11 +134,13 @@ const Slider = ({ items }) => {
 				</div>
 			</div>
 		</Swiper>
+	) : (
+		<Loader />
 	);
 };
 
 const Grid = ({ items }) => {
-	return (
+	return items.length ? (
 		<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:my-6">
 			{items.map((item, index) => {
 				return (
@@ -154,7 +160,7 @@ const Grid = ({ items }) => {
 							className="absolute w-full h-full left-0 top-0 object-cover rounded-xl"
 						/>
 
-						<div className="p-2 relative bg-black/30 text-white backdrop-blur-xl">
+						<div className="p-2 relative bg-black/30 text-white backdrop-blur-xl rounded-xl">
 							<h2 className="font-baloo leading-none mb-6">{item.title.substring(0, 40) + "..."}</h2>
 
 							<p className="flex items-center justify-start gap-6 text-base">
@@ -190,6 +196,8 @@ const Grid = ({ items }) => {
 				);
 			})}
 		</div>
+	) : (
+		<Loader />
 	);
 };
 

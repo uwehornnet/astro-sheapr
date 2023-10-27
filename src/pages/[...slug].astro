@@ -3,6 +3,9 @@ import {getCollection} from 'astro:content'
 import Layout from '../layouts/Layout.astro';
 import { Accomodations } from '../components/Accomodations';
 import Banner from '../components/Banner.astro';
+import BookingForm from '../components/BookingForm.astro';
+import DestinationSlider from '../components/DestinationSlider.astro';
+import Map from '../components/Map.astro';
 
 export async function getStaticPaths() {
     const types = await getCollection('types');
@@ -16,13 +19,29 @@ export async function getStaticPaths() {
     });
 };
 
-const {entry} = Astro.props
+const {entry} = Astro.props;
+const {Content} = await entry.render()
 const {slug} = Astro.params
 ---
 
 <Layout >
+    <div class="container my-16">
+        <h1 class="text-darkblue text-bigger font-medium leading-tight text-center my-8 max-w-[1024px] mx-auto">
+            Entdecke Rügens Charme, finde <span class="underlined">{slug == 'ferienhaus' ? 'dein Ferienhaus' : 'deine Ferienwohnung'}</span> am Strand!
+        </h1>
+        <BookingForm />
+    </div>
     <div class="container">
         <Accomodations client:load view="grid" type={slug} />
     </div>
-    <Banner />
+    <div class="container my-16">
+        <h2 class="text-center text-darkblue text-bigger font-medium leading-snug mx-auto mb-8">
+            Finde deine <span class="underlined">Traumunterkunft</span> auf <br> der zauberhaften Insel Rügen.
+        </h2>
+        <Map />
+        <DestinationSlider />
+    </div>
+    <div class="container mt-16 post">
+        <Content />
+    </div>
 </Layout>

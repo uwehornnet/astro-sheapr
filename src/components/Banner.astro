@@ -1,29 +1,24 @@
 ---
 import { Image } from "astro:assets";
-
+import { getCollection } from "astro:content"
+const types = await getCollection("types")
 ---
 
-<div class="relative">
+<div class="relative my-16">
     <div class="container">
-        <div class="rounded-xl relative bg-cover bg-center bg-no-repeat" style="background-image: url('/images/banner-bg.png')">
-            <div class="absolute top-0 left-0 w-full h-full bg-black/50 rounded-xl"></div>
-            <div class="p-6 md:p-16 relative text-center">
-                <h2 class="text-bigger leading-snug mb-6 max-w-[560px] mx-auto text-white">
-                    Dein <span class="underlined">Traumurlaub</span><br>beginnt hier!
+        <div class="rounded-xl relative grid grid-cols-2 items-center">
+            <div class="col-span-1">
+                <Image width="520" height="520" src="/images/erkunden-banner.png" alt="Rügen erkunden">
+            </div>
+            <div class="col-span-1">
+                <h2 class="text-big font-semibold leading-snug mb-6 max-w-[560px] text-darkblue">
+                    Rügens Schätze entdecken, in <span class="underlined">Traumunterkünften</span> entspannen
                 </h2>
-                <p class=" max-w-[640px] mx-auto text-white">Erlebe unvergessliche Momente an den schönsten Orten auf Rügen – finde hier die ideale Unterkunft für dein Traumurlaubserlebnis!</p>
-    
-                <a href="/" class="bg-dark py-3 px-6 rounded-full text-white mt-6 w-auto inline-block">
-                    <span class="flex items-center justify-center gap-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" />
-                        </svg>
-                          
-                        <span>Unterkünfte finden</span>
-                    </span>
-                </a>
+                <p class=" max-w-[640px]  ">Erlebe unvergessliche Momente an den schönsten Orten auf Rügen – finde hier die ideale Unterkunft für dein Traumurlaubserlebnis!</p>
+                <ul class="flex items-center gap-4 my-8">
+                    {types.map(type => <li><a class="bg-white rounded-full py-2 px-6 font-medium inline-block" href={`/${type.slug}`}>{type.data.title}</a></li>)}
+                </ul>
             </div>
         </div>
-        
     </div>
 </div>

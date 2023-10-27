@@ -8,14 +8,14 @@ export default {
 				"spin-slow": "spin 20s linear infinite",
 			},
 			colors: {
-				lightest: "#F1F3F8",
-				light: "#E3E6ED",
-				petrol: "#D8E0D4",
-				petroldark: "#88A398",
+				lightest: "#DEF6FF",
+				light: "#DEF6FF",
+				neon: "#00FFD1",
 				dark: "#1B1C1F",
+				darkblue: "#14285A",
 			},
 			fontFamily: {
-				josefin: ['"JosefinSans"'],
+				jost: ['"Jost"'],
 			},
 			aspectRatio: {
 				portrait: "8 / 10",
