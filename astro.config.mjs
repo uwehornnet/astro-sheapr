@@ -17,5 +17,10 @@ export default defineConfig({
 		mdx(),
 	],
 	output: "hybrid",
-	adapter: vercel(),
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+		maxDuration: 8,
+	}),
 });
