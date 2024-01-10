@@ -1,5 +1,5 @@
 :root {
-	--background-color: #DEF6FF;
+	--background-color: #DDF3F4;
 	--dark-color: #1B1C1F;
 }
 
@@ -23,18 +23,19 @@
 	}
 
 	@font-face {
-		font-family: "Jost";
-		font-weight: 600;
-		src: url(/fonts/Jost-SemiBold.woff) format("woff"),
-			url(/fonts/Jost-SemiBold.ttf) format("ttf");
+		font-family: "Baloo";
+		font-weight: 700;
+		src: url(/fonts/Baloo2-Bold.woff) format("woff"),
+			url(/fonts/Baloo2-Bold.ttf) format("ttf");
 	}
 
+
 	body {
-		font-size: 18px;
-		color: var(--dark-color);
-		font-family: "Jost", sans-serif;
+		font-size: 16px;
 		font-weight: 400;
-		background-color: var(--background-color)
+		font-family: "Jost", sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 }
 

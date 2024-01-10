@@ -1,0 +1,28 @@
+---
+import {getCollection} from 'astro:content'
+const categories = await getCollection('categories');
+---
+
+<div class=" container mx-auto px-4 md:px-6 my-4">
+	<nav class="relative block overflow-scroll no-scrollbar bg-slate-50">
+		<ul class="flex items-center justify-start gap-4">
+			{categories
+				.sort((a, b) => a.slug - b.slug)
+				.map((c, i) => (
+					<li class={`block ${i == categories.length - 1 ? "pr-6" : null}`} key={i}>
+						<a
+							href={`/category/${c.slug}`}
+							class="bg-slate-100 rounded-sm p-4 w-full aspect-square min-w-[120px] lg:min-w-[160px] max-w-[120px] lg:max-w-[160px] flex flex-col items-center text-center justify-center"
+						>
+							<img
+								src={`/images/${c.slug}.svg`}
+								alt={c.data.name}
+								class="h-6 lg:h-10 aspect-square object-contain mb-4"
+							/>
+							<h3 class="uppercase text-xs font-medium">{c.data.name}</h3>
+						</a>
+					</li>
+				))}
+		</ul>
+	</nav>
+</div>

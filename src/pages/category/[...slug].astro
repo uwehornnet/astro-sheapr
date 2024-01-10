@@ -1,0 +1,43 @@
+---
+import ProductGrid from '../../components/Products/ProductGrid';
+import Layout from '../../layouts/Layout.astro';
+import {getCollection} from 'astro:content'
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+    const categories = await getCollection('categories');
+    return categories.map(entry => {
+        return {
+            params: {
+                slug: entry.slug
+            },
+            props: {entry}
+        }
+    });
+};
+
+const {entry} = Astro.props;
+const {Content} = await entry.render()
+---
+
+<Layout title="Startseite" description="Startseite">
+	<main class="container mx-auto px-4 md:px-6">
+        <div class="relative">
+            <div class="absolute inset-0 w-full h-full flex items-center justify-center">
+                <h1 class="block text-center text-biggest text-white">{entry?.data.name}</h1>
+            </div>
+            <img
+                src={`/images/categories/${entry?.data.key}.jpg`}
+                alt={`${entry?.data.name} - Finde die besten Preise.`}
+                class="mx-auto w-full aspect-banner object-cover rounded-md"
+            />
+        </div>
+
+        <ProductGrid id={entry.data.id} searchPhrase={entry.data.searchPhrase} client:load />
+
+        <div class="my-4" id="content">
+            <Content />
+        </div>
+	</main>
+</Layout>

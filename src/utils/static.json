@@ -1,0 +1,416 @@
+[
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Amazon aufladen",
+		"price": "0,15 - 5000",
+		"image": "https://m.media-amazon.com/images/I/41T9d1hGOmL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3M8smHc"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Apple Air Tag",
+		"price": "32,55",
+		"image": "https://m.media-amazon.com/images/I/318ulj8mOHS._AC_SY328_.jpg",
+		"link": "https://amzn.to/3U1TKZb"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Apple AirPods Pro (2. Generation) ​​​​​​​mit MagSafe Ladecase (2022)",
+		"price": "257,85",
+		"image": "https://m.media-amazon.com/images/I/2110TEYPKnL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3M3fguI"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Nintendo Switch New Super Mario Bros. U Deluxe",
+		"price": "45,99",
+		"image": "https://m.media-amazon.com/images/I/51D4zF5dZnL._AC_SY164_.jpg",
+		"link": "https://amzn.to/3KnW49z"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Philips Domestic Appliances Senseo Original Kaffeepadmaschine mit Crema Plus, 1450 W, 0.7 Liter, 21.3 x 31.5 x 33 cm, Schwarz (HD6553/67)",
+		"price": "60,84",
+		"image": "https://m.media-amazon.com/images/I/41ZovfYtuHL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3ZtzAs9"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Nintendo Switch Konsole - Neon-Rot/Neon-Blau",
+		"price": "284,99",
+		"image": "https://m.media-amazon.com/images/I/41Y1hNEeCrL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3nweMD7"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Philips Sonicare 3100 – 2 x elektrische Schallzahnbürste, in Schwarz und Sugar Rose mit 2 x C2 Optimal Plaque Defense-Bürstenköpfen (Modell HX3675/15)",
+		"price": "79,46",
+		"image": "https://m.media-amazon.com/images/I/417BHe2GoSL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3KokNL2"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Playlist: Psychothriller",
+		"price": "11,99",
+		"image": "https://m.media-amazon.com/images/I/41m-1hvGIEL._AC_SY164_.jpg",
+		"link": "https://amzn.to/3Zv8u44"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Ravensburger Kinderspiele 24562 - Max Mäuseschreck - Würfel-Laufspiel für 2 bis 4 Spieler ab 4 Jahren",
+		"price": "21,99",
+		"image": "https://m.media-amazon.com/images/I/51ECWVf9djL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3G84U8S"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Tanqueray Blackcurrant Royale Gin | Leckeres Johannisbeer-Aroma | Geschenk & für Abende mit Freunden | Empfohlen für Gin Tonic & Cocktails | 41,3% vol | 700ml Einzelflasche |",
+		"price": "16,11",
+		"image": "https://m.media-amazon.com/images/I/416FV4RQXHL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3nEBSY8"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "LEGO 76217 Marvel Ich Bin Groot Spielzeug zum Bauen, Set mit Baby Groot-Figur aus Guardians of The Galaxy 2, tolles Geschenk zum Geburtstag",
+		"price": "37,99",
+		"image": "https://m.media-amazon.com/images/I/51ec6FCViYL._AC_SY328_.jpg",
+		"link": "https://amzn.to/42Ub06J"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Apple Watch Series 8 (GPS, 45mm) Smartwatch - Aluminiumgehäuse Mitternacht, Sportarmband Mitternacht - Regular. Fitnesstracker, Blutsauerstoffund EKGApps, Always-On Retina Display, Wasserschutz",
+		"price": "508",
+		"image": "https://m.media-amazon.com/images/I/51gT84RaGzL._AC_SY328_.jpg",
+		"link": "https://amzn.to/3nDzeSI"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "",
+		"name": "Nespresso De'Longhi EN 124.S Pixie Silber Kaffeekapselmaschine | 1260W | 0,7 L | Seitenpanels aus recycelten Kapseln, Silber Metall",
+		"price": "91,6",
+		"image": "https://m.media-amazon.com/images/I/41F9vHjtr8L._AC_SY164_.jpg",
+		"link": "https://amzn.to/3M3Jb65"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "ECHTPower Controller für Nintendo Switch Pro Controller Wireless für Switch OLED mit SYNC Taste/Aufweckfunktion/Einstellbare Turbo und Vibration/Bewegungssteuerung kabellos Kontroller für Switch Lite",
+		"price": "33,99",
+		"image": "https://m.media-amazon.com/images/I/41e2kmkOi8L._AC_SY328_.jpg",
+		"link": "https://amzn.to/3M3RM8D"
+	},
+	{
+		"store": "amazon",
+		"type": "",
+		"category": "unterhaltungselektronik",
+		"name": "Echo Dot (5. Generation, 2022) | Smarter Bluetooth Lautsprecher mit Alexa | Anthrazit",
+		"price": "34,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71C3lbbeLsL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3TZmK3H"
+	},
+	{
+		"store": "amazon",
+		"type": "",
+		"category": "unterhaltungselektronik",
+		"name": "Blink Outdoor – kabellose, witterungsbeständige HD-Überwachungskamera mit zwei Jahren Batterielaufzeit und Bewegungserfassung, funktioniert mit Alexa | 2 Kameras",
+		"price": "107,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/41eJYxWBLKL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3lPzQEk"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Apple AirPods Pro (2. Generation) ​​​​​​​mit MagSafe Ladecase (2022)",
+		"price": "57,85",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61SUj2aKoEL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3lSyqcb"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "NEW'C 2 Stück, Panzer Schutz Glas für iPhone 11 und iPhone XR, Frei von Kratzern, 9H Härte, HD Displayschutzfolie, 0.33mm Ultra-klar, Ultrabeständig",
+		"price": "5,09",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61fkIpO4SxL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3znxIXi"
+	},
+	{
+		"store": "amazon",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Echo Dot (5. Generation, 2022) Kids | Für Kinder entwickelt, mit Kindersicherung | Eulen-Design",
+		"price": "44,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71OimazcmOL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3M1WLH4"
+	},
+	{
+		"store": "ebay",
+		"type": "geschenk",
+		"category": "",
+		"name": "LEGO 42096 Technic Porsche 911 RSR, Konstruktionsspielzeug",
+		"price": "160,51",
+		"image": "https://i.ebayimg.com/images/g/VnMAAOSwH-VkJWsO/s-l400.jpg",
+		"link": "https://ebay.us/u1lUZM"
+	},
+	{
+		"store": "ebay",
+		"type": "geschenk",
+		"category": "",
+		"name": "LEGO 76209 Marvel Super Heroes Thors Hammer, Konstruktionsspielzeug",
+		"price": "102,85",
+		"image": "https://i.ebayimg.com/images/g/b9wAAOSwQeZkJWt5/s-l400.jpg",
+		"link": "https://ebay.us/jPuNN4"
+	},
+	{
+		"store": "ebay",
+		"type": "geschenk",
+		"category": "",
+		"name": "Oral-B Pro 3 3900 + 2. Handstück, Elektrische Zahnbürsten, Sensitiv, Timer",
+		"price": "74,99",
+		"image": "https://i.ebayimg.com/images/g/25oAAOSwPI5kIWAE/s-l400.jpg",
+		"link": "https://ebay.us/4rKZUX"
+	},
+	{
+		"store": "ebay",
+		"type": "geschenk",
+		"category": "unterhaltungselektronik",
+		"name": "Sony PlayStation 5 - Digital Edition",
+		"price": "499",
+		"image": "https://i.ebayimg.com/images/g/oDwAAOSwTo9kGdfG/s-l400.jpg",
+		"link": "https://ebay.us/P3apEW"
+	},
+	{
+		"store": "ebay",
+		"type": "geschenk",
+		"category": "",
+		"name": "DeLonghi ETAM 29.660.SB Kaffeevollautomat Milchaufschäumdüse Kegelmahlwerk",
+		"price": "319,9",
+		"image": "https://i.ebayimg.com/images/g/aRUAAOSwP2xkDtd~/s-l400.jpg",
+		"link": "https://ebay.us/2cxHTK"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "720°DGREE Trinkflasche 1l Sport “uberBottle“ softTouch +Sieb - BPA-Frei - Wasserflasche für Uni, Arbeit, Fitness, Fahrrad, Outdoor, Job - Sportflasche aus Tritan - Leicht, Bruchsicher, Nachhaltig",
+		"price": "18,97",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/617TrUhuuBL._AC_UL450_SR900,600_.jpg",
+		"link": "https://amzn.to/40NbrOB"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "Fit-Flip Mikrofaser Handtuch - viele Farben & Größen - kompakte Microfaser Handtücher - das Sporthandtuch, Reisehandtuch, Strandhandtuch und als Microfaser Badetuch groß",
+		"price": "15,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71cp7rWVn2L._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/43jw2vF"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "Castrol EDGE 5W-30 LL, 5 Liter",
+		"price": "42,49",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81NNa8n+P+L._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/417H2dN"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "Bosch elektrische Fahrradpumpe / Luftpumpe / Mini Kompressor EasyPump (3,0 Ah Akku, 3,6 Volt, Autostop-Funktion, 150 PSI, 10,3 bar, LED, über USB-C wiederaufladbar, im Karton)",
+		"price": "59",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61FAAS+1pbL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3ZS5PBJ"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "TUGA Chemie 5712088 Sprühflasche Alu-Teufel Spezial Sprayer 1000 ml",
+		"price": "11,49",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81MmkWd6xzL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3ZKnniY"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "fotografie",
+		"name": "INSTAX Mini 12 Sofortbildkamera Mint-Green",
+		"price": "86,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/412JsUs79hL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3UlBSZi"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "Blukar Springseil, Speed Rope Verstellbar mit Hautfreundlichen Schaum Griffe, Länge Einstellbar, rutschfest und Ideal für Fitness & Ausdauer & Seilspringen, geeignet für Kinder und Erwachsene",
+		"price": "11,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71VsiyQgizL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3zHGFLk"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "Fitgriff® Zughilfen (gepolstert) für Krafttraining, Bodybuilding, Fitness - Kreuzheben Gurte - Profi Lifting Straps - für Frauen und Männer",
+		"price": "14,95",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81t8-U7hgNL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3KHsOLa"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "Osram NIGHT BREAKER 200, H7, + 200% Licht, Halogenlampe für Scheinwerfer, 64210NB200-HCB, 12-V-Auto, Doppelbox (2 Lampen), Silber, 2 Stück , (1er Pack)",
+		"price": "26,4",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61Ik0LNKtmS._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3KgD8Zn"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "OSRAM NIGHT BREAKER H7-LED; bis zu 220 % mehr Helligkeit, erstes legales LED H7 Abblendlicht mit Straßenzulassung in Deutschland & Österreich",
+		"price": "96",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71rYcoaMfjL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3maa9yt"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "Bosch Automotive Scheibenwischer Aerotwin A863S, Länge: 650mm/450mm – Set für Frontscheibe",
+		"price": "20,48",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/51JZQpZy7GL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3KldHWt"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "LIQUI MOLY Top Tec 4200 5W-30 New Generation | 5 L | Synthesetechnologie Motoröl | Art.-Nr.: 3707",
+		"price": "47,8",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81ntfLyfQuL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/419j95x"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "auto-motorad",
+		"name": "SONAX FelgenBeast (1 Liter) entfernt selbst biestige Verschmutzungen auf allen polierten, verchromten und matten Stahl- & Leichtmetallfelgen | Art-Nr. 04333000",
+		"price": "14,95",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81VWX0xa5nL._AC_UL675_SR675,480_.jpg",
+		"link": "https://amzn.to/3GrsRbC"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "BLACKROLL® STANDARD - Originale Faszienrolle (30 x 15 cm), Fitness-Rolle zur Selbstmassage von Rücken und Beine, effektive Massagerolle für funktionales Training, mittlere Härte, Made in Germany",
+		"price": "26,9",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/81SUjCn9b8L._AC_UL300_SR300,200_.jpg",
+		"link": "https://amzn.to/40TEAI8"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "sport-freizeit",
+		"name": "TOPLUS Gymnastikmatte, Yogamatte Yogamatte Gepolstert & rutschfest für Fitness Pilates & Gymnastik mit Tragegurt",
+		"price": "25,19",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71+K7iNhr5L._AC_UL300_SR300,200_.jpg",
+		"link": "https://amzn.to/3KHumEY"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "HP 302 (F6U66AE) Original Druckerpatrone Schwarz für HP DeskJet 1110, 213x, 363x, HP ENVY 452x, HP OfficeJet 383x, 465x, 52x",
+		"price": "17,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/612fWGUGKiL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3GmB3Kf"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "AVM FRITZ!WLAN Mesh Repeater 2400 (Dual-WLAN AC + N bis zu 1.733 MBit/s (5GHz) + 600 MBit/s(2,4 GHz), 1x Gigabit-LAN, deutschsprachige Version)",
+		"price": "94,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61SXKeN9mEL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3KF6mm3"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "Canon PG-540/CL541 C/M/Y Druckertinte Multipack - je 1 FINE Druckkopf mit 8 ml Tinte schwarz und 8 ml Tinte Farbe für PIXMA Tintenstrahldrucker ORIGINAL",
+		"price": "36,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/31gNVUBgTWL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3meSXrl"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "Samsung 980 PRO M.2 NVMe SSD (MZ-V8P1T0BW), 1 TB, PCIe 4.0, 7.000 MB/s Lesen, 5.000 MB/s Schreiben, Internes Solid State Drive, für Gaming und Videobearbeitung",
+		"price": "89",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/71qzxMWToeL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3MmZ085"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "Samsung 870 QVO SATA III 2,5 Zoll SSD (MZ-77Q1T0BW), 1 TB, 560 MB/s Lesen, 530 MB/s Schreiben, Internes Solid State Drive, schnelle Festplatte als Ersatz für HDD",
+		"price": "68,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/91PA5sP5wNL._AC_UL300_SR300,200_.jpg",
+		"link": "https://amzn.to/3GsJrYG"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "HP 62 (N9J71AE) Multipack Original Druckerpatronenfür HP ENVY 55xx, 56xx, 7640 und HP OfficeJet 200, 250, 57xx , 1xSchwarz, 1xFarbe ( 2 Stück) 1er Pack",
+		"price": "40,31",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/61TLlpB1lbL._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3UiFkUE"
+	},
+	{
+		"store": "amazon",
+		"type": "bestseller",
+		"category": "computer-software",
+		"name": "HP DeskJet 2720e Multifunktionsdrucker (Instant Ink, Drucker, Scanner, Kopierer, WLAN, Airprint) inklusive 6 Monate Instant Ink",
+		"price": "62,99",
+		"image": "https://images-eu.ssl-images-amazon.com/images/I/51CRVXGiYlS._AC_UL900_SR900,600_.jpg",
+		"link": "https://amzn.to/3GmBUdV"
+	}
+]

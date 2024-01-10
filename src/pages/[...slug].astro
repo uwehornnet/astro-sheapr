@@ -1,15 +1,13 @@
 ---
-import {getCollection} from 'astro:content'
+import ProductGrid from '../components/Products/ProductGrid';
 import Layout from '../layouts/Layout.astro';
-import { Accomodations } from '../components/Accomodations';
-import Banner from '../components/Banner.astro';
-import BookingForm from '../components/BookingForm.astro';
-import DestinationSlider from '../components/DestinationSlider.astro';
-import Map from '../components/Map.astro';
+import {getCollection} from 'astro:content'
+
+export const prerender = true;
 
 export async function getStaticPaths() {
-    const types = await getCollection('types');
-    return types.map(entry => {
+    const standorte = await getCollection('teaser');
+    return standorte.map(entry => {
         return {
             params: {
                 slug: entry.slug
@@ -21,27 +19,14 @@ export async function getStaticPaths() {
 
 const {entry} = Astro.props;
 const {Content} = await entry.render()
-const {slug} = Astro.params
 ---
 
-<Layout >
-    <div class="container my-16">
-        <h1 class="text-darkblue text-bigger font-medium leading-tight text-center my-8 max-w-[1024px] mx-auto">
-            Entdecke Rügens Charme, finde <span class="underlined">{slug == 'ferienhaus' ? 'dein Ferienhaus' : 'deine Ferienwohnung'}</span> am Strand!
-        </h1>
-        <BookingForm />
-    </div>
-    <div class="container">
-        <Accomodations client:load view="grid" type={slug} />
-    </div>
-    <div class="container my-16">
-        <h2 class="text-center text-darkblue text-bigger font-medium leading-snug mx-auto mb-8">
-            Finde deine <span class="underlined">Traumunterkunft</span> auf <br> der zauberhaften Insel Rügen.
-        </h2>
-        <Map />
-        <DestinationSlider />
-    </div>
-    <div class="container mt-16 post">
-        <Content />
-    </div>
+<Layout title="Startseite" description="Startseite">
+	<main class="container mx-auto px-4 md:px-6">
+        <h1 class="block text-center text-biggest ">{entry?.data.name}</h1>
+        
+        <div class="my-4" id="content">
+            <Content />
+        </div>
+	</main>
 </Layout>

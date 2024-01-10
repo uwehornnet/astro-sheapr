@@ -4,30 +4,26 @@ export default {
 	theme: {
 		container: false,
 		extend: {
-			animation: {
-				"spin-slow": "spin 20s linear infinite",
-			},
-			colors: {
-				lightest: "#DEF6FF",
-				light: "#DEF6FF",
-				neon: "#00FFD1",
-				dark: "#1B1C1F",
-				darkblue: "#14285A",
-			},
 			fontFamily: {
 				jost: ['"Jost"'],
 			},
-			aspectRatio: {
-				portrait: "8 / 10",
-				banner: "16 / 4",
-				video: "16 / 9",
-				hero: "16 / 7",
-				square: "1 / 1",
+			fontSize: {
+				"3xl": "32px",
+				"4xl": "48px",
+				"5xl": "56px",
+				"6xl": "64px",
+				"7xl": "72px",
+				"8xl": "80px",
 			},
-			spacing: {
-				"some key": {
-					1.5: "",
-				},
+			aspectRatio: {
+				portrait: "9 / 13",
+				video: "16 / 9",
+				header: "16 / 8",
+				banner: "16 / 4",
+				bannerbox: "1 / 2",
+			},
+			animation: {
+				"spin-slow": "spin 20s linear infinite",
 			},
 		},
 	},

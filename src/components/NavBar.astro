@@ -1,0 +1,19 @@
+---
+import {getCollection} from 'astro:content'
+const teaser = await getCollection('teaser');
+---
+
+<div class="px-4 md:px-6 bg-teal-400/30 text-teal-800 z-[90] backdrop-blur-xl overflow-x-scroll no-scrollbar">
+    <ul class="flex justify-start md:justify-center items-center">
+        {teaser.map((item) => (
+            <li >
+                <a
+                    href={`/${item.slug}`}
+                    class="inline-block whitespace-pre py-2 px-6 uppercase tracking-wider text-sm font-medium hover:bg-teal-800 hover:text-teal-200"
+                >
+                    {item.data.name}
+                </a>
+            </li>
+        ))}
+    </ul>
+</div>

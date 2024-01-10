@@ -1,0 +1,16 @@
+---
+import ProductGrid from '../components/Products/ProductGrid';
+import Layout from '../layouts/Layout.astro';
+
+export const prerender = false;
+
+const search = Astro.url.searchParams.get('s')! || '';
+
+
+---
+
+<Layout title="Startseite" description="Startseite">
+	<main class="container mx-auto px-4 md:px-6">
+        <ProductGrid  searchPhrase={search} client:load />
+	</main>
+</Layout>
